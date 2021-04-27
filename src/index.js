@@ -1,7 +1,7 @@
 console.log('%c HI', 'color: firebrick')
 document.addEventListener("DOMContentLoaded", function(){
 
-let ul = document.querySelector("ul");
+let ulDog = document.querySelector("ul");
   fetchesDogs();
   fetchesDogBreeds();
 
@@ -59,7 +59,7 @@ let DogBreed = [];
             li.addEventListener("click", function(){
               this.style.color = "blue";
             });
-            ul.appendChild(li);
+            ulDog.appendChild(li);
           }
         }
       }
@@ -91,13 +91,13 @@ let DogFilter = [];
         }
       }
     }
-    ul.innerHTML = "";
+    ulDog.innerHTML = "";
     for (let filter in DogFilter){
       let li = document.createElement("li");
       li.innerHTML = filter;
       li.addEventListener("click", function(){
         this.style.color = "blue";
       });
-      ul.appendChild(li);
+      ulDog.appendChild(li);
     }
   }
