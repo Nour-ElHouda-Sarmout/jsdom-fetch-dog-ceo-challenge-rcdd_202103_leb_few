@@ -1,7 +1,6 @@
 console.log('%c HI', 'color: firebrick')
 document.addEventListener("DOMContentLoaded", function(){
-
-let ulDog = document.querySelector("ul");
+  
   fetchesDogs();
   fetchesDogBreeds();
 
@@ -44,7 +43,7 @@ function renderImgUrl(json) {
 let DogBreed = [];
   function renderBreedUrl(json) {
     console.log(json);
-
+    const ulDog = document.querySelector("ul");
     for (let i in json.message) {
 
       if(i !== ' '){
@@ -69,6 +68,7 @@ let DogBreed = [];
 let DogFilter = [];
   function filterDogBreedsByAlphabet(value){
     let selectedValue = value;
+    const ulDog = document.querySelector("ul");
     for (let breed in DogBreed){
       if(selectedValue === 'a'){
         if(breed.charAt(0) === 'a'){
