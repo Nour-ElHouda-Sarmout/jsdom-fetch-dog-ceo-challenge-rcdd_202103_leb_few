@@ -44,7 +44,7 @@ function renderImgUrl(json) {
 let DogBreed = [];
   function renderBreedUrl(json) {
     console.log(json);
-    
+
     for (let i in json.message) {
 
       if(i !== ' '){
