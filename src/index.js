@@ -1,7 +1,7 @@
 console.log('%c HI', 'color: firebrick')
 document.addEventListener("DOMContentLoaded", function(){
 
-const ul = document.querySelector("ul");
+let ul = document.querySelector("ul");
   fetchesDogs();
   fetchesDogBreeds();
 
