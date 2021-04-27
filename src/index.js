@@ -39,11 +39,11 @@ function renderImgUrl(json) {
           .then((resp) => resp.json())
           .then((json) =>renderBreedUrl(json));
   }
-const ul;
+
 let DogBreed = [];
   function renderBreedUrl(json) {
     console.log(json);
-    ul = document.querySelector("ul");
+    const ul = document.querySelector("ul");
     for (let i in json.message) {
 
       if(i !== ' '){
