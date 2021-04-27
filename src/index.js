@@ -53,7 +53,7 @@ let DogBreed = [];
 
           if(b !== ' '){
             let li = document.createElement("li");
-            DogBreed.push(breed(b));
+            DogBreed.push(breed[b]);
             li.innerHTML = breed[b];
             li.addEventListener("click", function(){
               this.style.color = "blue";
