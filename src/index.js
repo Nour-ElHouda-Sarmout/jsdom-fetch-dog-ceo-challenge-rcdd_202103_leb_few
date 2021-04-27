@@ -1,6 +1,7 @@
 console.log('%c HI', 'color: firebrick')
 document.addEventListener("DOMContentLoaded", function(){
 
+const ul = document.querySelector("ul");
   fetchesDogs();
   fetchesDogBreeds();
 
@@ -43,7 +44,7 @@ function renderImgUrl(json) {
 let DogBreed = [];
   function renderBreedUrl(json) {
     console.log(json);
-    const ul = document.querySelector("ul");
+    
     for (let i in json.message) {
 
       if(i !== ' '){
