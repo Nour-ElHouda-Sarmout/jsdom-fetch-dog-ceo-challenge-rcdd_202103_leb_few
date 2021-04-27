@@ -72,22 +72,22 @@ let DogFilter = [];
     const ulDog = document.querySelector("ul");
     for (let breed in DogBreed){
       if(selectedValue === 'a'){
-        if(breed.charAt(0) === 'a'){
+        if(DogBreed[breed].charAt(0) === 'a'){
           DogFilter.push(DogBreed[breed]);
         }
       }
       if(selectedValue === 'b'){
-        if(breed.charAt(0) === 'b'){
+        if(DogBreed[breed].charAt(0) === 'b'){
           DogFilter.push(DogBreed[breed]);
         }
       }
       if(selectedValue === 'c'){
-        if(breed.charAt(0) === 'c'){
+        if(DogBreed[breed].charAt(0) === 'c'){
           DogFilter.push(DogBreed[breed]);
         }
       }
       if(selectedValue === 'd'){
-        if(breed.charAt(0) === 'd'){
+        if(DogBreed[breed].charAt(0) === 'd'){
           DogFilter.push(DogBreed[breed]);
         }
       }
