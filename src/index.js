@@ -65,12 +65,13 @@ let DogBreed = [];
     }
   }
 
-let DogFilter = [];
+
   function filterDogBreedsByAlphabet(value){
     let selectedValue = value;
-    console.log(selectedValue);
+    let DogFilter = [];
     const ulDog = document.querySelector("ul");
     ulDog.innerHTML = "";
+    
     for (let breed in DogBreed){
       if(selectedValue === 'a'){
         if(DogBreed[breed].charAt(0) === 'a'){
@@ -94,7 +95,6 @@ let DogFilter = [];
       }
     }
 
-    console.log(DogFilter);
     for (let filter in DogFilter){
       let li = document.createElement("li");
       li.innerHTML = DogFilter[filter];
