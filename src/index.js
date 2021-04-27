@@ -3,7 +3,14 @@ document.addEventListener("DOMContentLoaded", function(){
 
   fetchesDogs();
   fetchesDogBreeds();
-  filterDogBreedsByAlphabet();
+
+  const selectElement = document.querySelector('#breed-dropdown');
+
+  selectElement.addEventListener('change', (event) => {
+  //const result = document.querySelector('.result');
+//  result.textContent = `You like ${event.target.value}`;
+  filterDogBreedsByAlphabet(event.target.value);
+});
 });
 
 function fetchesDogs(){
@@ -59,8 +66,8 @@ let DogBreed = [];
   }
 
 let DogFilter = [];
-  function filterDogBreedsByAlphabet(){
-    let selectedValue = document.querySelector("select").value;
+  function filterDogBreedsByAlphabet(value){
+    let selectedValue = value;
     for (let breed in DogBreed){
       if(selectedValue === 'a'){
         if(breed.charAt(0) === 'a'){
