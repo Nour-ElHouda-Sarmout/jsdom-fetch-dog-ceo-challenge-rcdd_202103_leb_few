@@ -91,10 +91,10 @@ let DogFilter = [];
         }
       }
     }
-    //ulDog.innerHTML = "";
+    ulDog.innerHTML = "";
     for (let filter in DogFilter){
       let li = document.createElement("li");
-      li.innerHTML = filter;
+      li.innerHTML = DogFilter[filter];
       li.addEventListener("click", function(){
         this.style.color = "blue";
       });
