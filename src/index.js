@@ -92,6 +92,7 @@ let DogFilter = [];
       }
     }
     ulDog.innerHTML = "";
+    console.log(DogFilter);
     for (let filter in DogFilter){
       let li = document.createElement("li");
       li.innerHTML = DogFilter[filter];
