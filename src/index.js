@@ -68,6 +68,7 @@ let DogBreed = [];
 let DogFilter = [];
   function filterDogBreedsByAlphabet(value){
     let selectedValue = value;
+    console.log(selectedValue);
     const ulDog = document.querySelector("ul");
     for (let breed in DogBreed){
       if(selectedValue === 'a'){
