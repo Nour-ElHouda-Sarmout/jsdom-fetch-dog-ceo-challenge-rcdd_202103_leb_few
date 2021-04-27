@@ -93,7 +93,7 @@ let DogFilter = [];
         }
       }
     }
-    
+
     console.log(DogFilter);
     for (let filter in DogFilter){
       let li = document.createElement("li");
