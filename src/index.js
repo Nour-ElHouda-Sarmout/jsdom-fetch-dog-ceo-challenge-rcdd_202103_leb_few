@@ -72,22 +72,22 @@ let DogFilter = [];
     for (let breed in DogBreed){
       if(selectedValue === 'a'){
         if(breed.charAt(0) === 'a'){
-          DogFilter.push(breed);
+          DogFilter.push(DogBreed[breed]);
         }
       }
       if(selectedValue === 'b'){
         if(breed.charAt(0) === 'b'){
-          DogFilter.push(breed);
+          DogFilter.push(DogBreed[breed]);
         }
       }
       if(selectedValue === 'c'){
         if(breed.charAt(0) === 'c'){
-          DogFilter.push(breed);
+          DogFilter.push(DogBreed[breed]);
         }
       }
       if(selectedValue === 'd'){
         if(breed.charAt(0) === 'd'){
-          DogFilter.push(breed);
+          DogFilter.push(DogBreed[breed]);
         }
       }
     }
