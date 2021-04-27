@@ -71,7 +71,7 @@ let DogBreed = [];
     let DogFilter = [];
     const ulDog = document.querySelector("ul");
     ulDog.innerHTML = "";
-    
+
     for (let breed in DogBreed){
       if(selectedValue === 'a'){
         if(DogBreed[breed].charAt(0) === 'a'){
